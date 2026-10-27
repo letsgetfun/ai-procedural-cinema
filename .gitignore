@@ -1,0 +1,23 @@
+# 第三方模型已在仓库内（CC-BY-4.0，见 docs/THIRD-PARTY.md）
+# 若不想托管该文件，删掉 model/SM_tex270k.glb 并改用它处副本
+
+# Blender 中间文件：可由 build_hero*.py 重建
+*.blend
+*.blend1
+
+# 渲染与音频中间产物
+out/frames/
+out/aud/
+out/*.mp4
+out/score30.wav
+out/kf*/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 系统
+.DS_Store
+Thumbs.db
