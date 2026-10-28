@@ -73,7 +73,9 @@ def main():
     print("impacts: %d   first %.3f" % (len(t), t[0] if len(t) else -1))
     if len(t) > 1:
         print("mean interval: %.4f s" % np.diff(t).mean())
-        print("max deviation from 1.25s grid: %.3f s" % (t % 1.25).max())
+        d = t % 1.25
+        d = np.minimum(d, 1.25 - d)          # 取到网格线的绝对距离
+        print("max deviation from 1.25s grid: %.3f s" % d.max())
 
 
 if __name__ == "__main__":
