@@ -2,11 +2,13 @@
 
 > 一个 **30 秒 / 1080p / 24fps** 的纯程序化短片：星际战士在哥特教堂中殿朝镜头走来，镜头与他同速后退，玫瑰窗在背后压出一圈光背。
 >
-> **除角色网格外，教堂、王座、玻璃、红毯、织花、光柱、骨骼、动作、配乐全部由代码生成**，没有任何外部贴图、HDRI 或商业音乐。角色网格为 CC-BY-4.0 第三方素材，已随仓库分发并完整署名。
+> **除角色网格外，教堂、王座、玻璃、红毯、织花、光柱、骨骼、动作、配乐全部由代码生成**，没有任何外部贴图或 HDRI。角色网格为 CC-BY-4.0 第三方素材，已随仓库分发并完整署名。
+>
+> 仓库内所有可构建产物（`build.sh`）配乐为程序合成，**不含第三方音乐**；`Releases` 里的成片附件另含第三方音乐，详见 [下载](#下载)。
 
 ![preview](docs/preview.jpg)
 
-**EN** — A 30-second, fully procedural cinematic: a Space Marine walks down a Gothic nave toward the camera while the camera retreats at the same speed. Everything except the character mesh (CC-BY-4.0, credited below) is generated in code: cathedral geometry, stained glass, throne, carpet, brocade, volumetric fog, fake god-rays, rig, IK gait, and a synthesized soundtrack. No external textures, HDRIs, or licensed music. Built with Blender 4.5 (EEVEE Next) + Python/numpy/scipy + ffmpeg.
+**EN** — A 30-second, fully procedural cinematic: a Space Marine walks down a Gothic nave toward the camera while the camera retreats at the same speed. Everything except the character mesh (CC-BY-4.0, credited below) is generated in code: cathedral geometry, stained glass, throne, carpet, brocade, volumetric fog, fake god-rays, rig, IK gait, and a synthesized soundtrack. No external textures or HDRIs. Note: the `build.sh` output uses an original synthesized score; the `.mov` attached to Releases contains a third-party track — see [Download](#download). Built with Blender 4.5 (EEVEE Next) + Python/numpy/scipy + ffmpeg.
 
 ```bash
 BLENDER=/path/to/blender PYTHON=/path/to/python bash build.sh
