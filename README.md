@@ -15,6 +15,36 @@ BLENDER=/path/to/blender PYTHON=/path/to/python bash build.sh
 
 ---
 
+## 下载
+
+成片以 **Release 附件**分发（不进 git 历史，不影响 clone 速度）：
+
+| 文件 | 容器 / 编码 | 配乐 | 大小 |
+|---|---|---|---|
+| `astartes-imperial-angel-1080p-v11-MjYxMDI4.mov` | MOV · H.264 + AAC 48 kHz | 第三方（见下） | ≈54 MB |
+
+**→ [下载最新版](https://github.com/letsgetfun/ai-procedural-cinema/releases/latest)**
+
+> `.mov` 是 QuickTime 容器，Windows / macOS 双击可播。若目标平台是网页播放器或部分手机端，改封装成 `.mp4` 即可（同一路 H.264 流，`-c copy`，不重编码、不掉画质）：
+>
+> ```bash
+> ffmpeg -i in.mov -c copy out.mp4
+> ```
+
+<img src="docs/disclaimer-music.png" alt="非商业用途声明" width="100%">
+
+### ⚠️ 关于这个 Release 的配乐
+
+Release 中的 `.mov` 使用 **"Imperial Advance" by Jesper Kyd**（《Warhammer 40,000: Darktide》原声，© Fatshark），**未取得公开传播授权**。
+
+- 这属于第三方版权音乐，**不适用本仓库的 CC-BY-4.0 声明**（CC-BY 只覆盖我方原创内容，无法覆盖他人作品）
+- 仅作**非商业同人展示**，不含广告、赞助或付费分发
+- 权利人如提出异议，将立即移除该附件
+
+若你需要可自由使用的版本，请用 `build.sh` 重新构建（配乐为程序合成，无第三方音频），或见 [docs/THIRD-PARTY.md](docs/THIRD-PARTY.md)。
+
+---
+
 ## 规格
 
 | 项 | 值 |
@@ -22,6 +52,7 @@ BLENDER=/path/to/blender PYTHON=/path/to/python bash build.sh
 | 分辨率 / 帧率 | 1920×1080 / 24 fps / 720 帧 |
 | 时长 | 30.000 s |
 | 编码 | H.264 CRF16 / yuv420p / bt709 / tv range + AAC 192k 48 kHz |
+| 容器 / 文件名 | `.mov` — `astartes-imperial-angel-1080p-v11-MjYxMDI4.mov` |
 | 响度 | −14 LUFS（EBU R128 实测 −13.9） |
 | 渲染器 | Blender 4.5.15 LTS · EEVEE Next · 28 samples |
 | 单帧耗时 | 7–15 s（RTX 3060）／全片 1.5–3 h |
@@ -55,7 +86,7 @@ BLENDER=/path/to/blender PYTHON=/path/to/python bash build.sh
 | — | 模型已入库（`model/SM_tex270k.glb`，12.8 MB，CC-BY-4.0） |
 | `*.blend` | 每个 41 MB，可完全由 `build_hero*.py` 重建 |
 | `out/frames/*.png` | 720 帧共 ≈1.9 GB |
-| 成片 `*.mp4` | 请见 Releases |
+| 成片 | 不入库，见下方 **下载** |
 
 ---
 
@@ -165,5 +196,7 @@ bash build_audio.sh
 | 骨骼 / 权重 / 动作 / 场景 / 贴图 / 灯光 / 配乐 / 脚本 | 本项目 | MIT（代码）· CC-BY-4.0（影像） |
 
 完整署名与第三方声明见 [`docs/THIRD-PARTY.md`](docs/THIRD-PARTY.md)。
+
+> **范围限定**：本仓库的 CC-BY-4.0 仅覆盖由 `build.sh` 生成的影像（配乐为程序合成）。Release 中 `.mov` 附件的配乐为第三方版权音乐，**不在该授权范围内**。
 
 > ⚠️ **关于商用**：CC-BY-4.0 只覆盖 Janovich 对这份网格的权利。星际战士 / 动力甲 / 帝国鹰徽的造型属于 **Games Workshop** 的《战锤 40,000》知识产权，这是 CC 许可无法豁免的另一层限制。个人与非商业发布通常无碍；商业化（广告、接活、付费分发）前请自行评估。
