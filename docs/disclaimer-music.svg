@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="72%">
+      <stop offset="0%" stop-color="#151009"/>
+      <stop offset="60%" stop-color="#0b0805"/>
+      <stop offset="100%" stop-color="#050403"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8f6f2a"/>
+      <stop offset="45%" stop-color="#e8c877"/>
+      <stop offset="100%" stop-color="#a8842f"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c8a34a" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#c8a34a" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#c8a34a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+
+  <!-- 外框 -->
+  <rect x="72" y="72" width="1776" height="936" fill="none" stroke="url(#gold)" stroke-width="2.2" opacity="0.85"/>
+  <rect x="84" y="84" width="1752" height="912" fill="none" stroke="#c8a34a" stroke-width="0.8" opacity="0.35"/>
+
+  <!-- 顶部标签 -->
+  <text x="150" y="176" font-family="Georgia, serif" font-size="26" letter-spacing="12"
+        fill="#c8a34a" opacity="0.9">N O T I C E</text>
+  <text x="150" y="214" font-family="Microsoft YaHei, sans-serif" font-size="19" letter-spacing="6"
+        fill="#8a7f6a">使 用 声 明</text>
+
+  <!-- 主标题 -->
+  <text x="150" y="352" font-family="Microsoft YaHei, sans-serif" font-size="60" font-weight="bold"
+        fill="#f0e6d2">本作品仅用于学习与技术研究</text>
+  <text x="150" y="412" font-family="Georgia, serif" font-size="30" letter-spacing="2.5"
+        fill="#c8a34a" opacity="0.92">For educational and research use only — non-commercial</text>
+
+  <rect x="150" y="462" width="900" height="2" fill="url(#fade)"/>
+
+  <!-- 条目 -->
+  <g font-family="Microsoft YaHei, sans-serif" font-size="26" fill="#d8cbb4">
+    <text x="150" y="536">非商业用途：不含广告、赞助、付费分发或任何形式的变现。</text>
+    <text x="150" y="592">角色模型　 “Space Marine” by Janovich · CC-BY-4.0 · sketchfab.com/janovich3D</text>
+    <text x="150" y="648">知识产权　 Warhammer 40,000 及其角色设计版权归 Games Workshop 所有；</text>
+    <text x="396" y="690">本项目与其无关联，亦未获得其授权或背书。</text>
+    <text x="150" y="746">配　　乐　 “Imperial Advance” by Jesper Kyd（© Fatshark），未获商业授权，</text>
+    <text x="396" y="788">仅作非商业同人展示；权利人要求即刻移除。</text>
+    <text x="150" y="844">其余内容　 场景、骨骼、动作、贴图、灯光、脚本均为本项目原创。</text>
+  </g>
+
+  <rect x="150" y="892" width="900" height="2" fill="url(#fade)"/>
+
+  <text x="150" y="936" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#8a7f6a">
+    权利人如认为本作品侵犯其权益，请通过仓库 Issues 联系，将在 48 小时内删除相关内容。
+  </text>
+  <text x="150" y="982" font-family="Georgia, serif" font-size="20" letter-spacing="1.5" fill="#8a7f6a">
+    github.com/letsgetfun/ai-procedural-cinema
+  </text>
+
+  <!-- 右侧印章 -->
+  <g opacity="0.5">
+    <circle cx="1570" cy="560" r="150" fill="none" stroke="#8f6f2a" stroke-width="2"/>
+    <circle cx="1570" cy="560" r="132" fill="none" stroke="#8f6f2a" stroke-width="1"/>
+    <text x="1570" y="528" text-anchor="middle" font-family="Microsoft YaHei, sans-serif"
+          font-size="34" fill="#c8a34a" letter-spacing="8">非商业</text>
+    <text x="1570" y="576" text-anchor="middle" font-family="Microsoft YaHei, sans-serif"
+          font-size="34" fill="#c8a34a" letter-spacing="8">学习用途</text>
+    <text x="1570" y="622" text-anchor="middle" font-family="Georgia, serif"
+          font-size="17" fill="#8a7f6a" letter-spacing="3">NON-COMMERCIAL</text>
+  </g>
+</svg>
