@@ -33,7 +33,7 @@ BLENDER=/path/to/blender PYTHON=/path/to/python bash build.sh
 > ffmpeg -i in.mov -c copy out.mp4
 > ```
 
-<img src="docs/disclaimer-music.png" alt="非商业用途声明" width="100%">
+<img src="docs/disclaimer-music.png" alt="非商业用途声明" width="760">
 
 ### ⚠️ 关于这个 Release 的配乐
 
